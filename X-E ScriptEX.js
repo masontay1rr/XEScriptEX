@@ -3,11 +3,6 @@
     try {
       const scriptCode = document.getElementById("xe-script-input").value;
       const result = eval(scriptCode);
-      alert("Script executed successfully!");
-      console.log("Execution result:", result);
-    } catch (error) {
-      alert("Error executing script: " + error.message);
-    }
   }
 
   const container = document.createElement("div");
