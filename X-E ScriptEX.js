@@ -1,8 +1,13 @@
-(function(){
+javascript:(function(){
   function executeScript() {
     try {
       const scriptCode = document.getElementById("xe-script-input").value;
       const result = eval(scriptCode);
+      console.log("Script executed successfully!");
+      console.log("Execution result:", result);
+    } catch (error) {
+      console.log("Error executing script: " + error.message);
+    }
   }
 
   const container = document.createElement("div");
