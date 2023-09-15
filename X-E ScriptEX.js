@@ -1,4 +1,4 @@
-javascript:(function () {
+(function () {
   function executeScript() {
     try {
       const scriptCode = document.getElementById("xe-script-input").value;
@@ -18,12 +18,12 @@ javascript:(function () {
 
   const container = document.createElement("div");
   container.style.position = "fixed";
-  container.style.bottom = "0";
+  container.style.top = "0";
   container.style.left = "0";
   container.style.right = "0";
   container.style.backgroundColor = "black";
   container.style.color = "green";
-  container.style.borderTop = "2px solid green";
+  container.style.borderBottom = "2px solid green";
   container.style.padding = "10px";
   container.style.zIndex = "9999";
 
@@ -48,7 +48,6 @@ javascript:(function () {
   consoleOutput.id = "xe-script-console";
   consoleOutput.style.height = "150px";
   consoleOutput.style.overflowY = "auto";
-  consoleOutput.style.marginTop = "10px";
   consoleOutput.style.borderTop = "1px solid green";
 
   container.appendChild(input);
